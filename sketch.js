@@ -29,10 +29,6 @@ function setup() {
   createCanvas(1000, 800, WEBGL);
   cam1 = createCamera();
   noCursor();
-    if (frameCount < 2) {
-    fondo.setVolume(0.08);
-    fondo.loop();
-    }
   pagina=0;
   canvas = document.querySelector('canvas');
   canvas.addEventListener('contextmenu', botonDerecho);
@@ -101,6 +97,19 @@ function draw() {
   plane(400);
   pop();
   }
+  if (frameCount < 30) {
+    fondo.setVolume(0.08);
+    fondo.loop();
+    }
+  if (frameCount > 600) {
+    if      (pagina == 1){
+                window.open("https://editor.p5js.org/diazmaximo2a/full/VlcijYGm3", "_top");} //galeria
+    else if (pagina == 2){
+               window.open("https://jeffercart.github.io/audio/", "_top");} //audio
+    else if (pagina == 3) {
+               window.open("https://editor.p5js.org/diazmaximo2a/full/sHf8YxOjK", "_top");}//ojos
+    }
+
 }
 
 function arteinter(c1, c2) {
@@ -249,16 +258,6 @@ function cubos(){
   translate(700, 0, -1250);
   arteinter(50, 80);
   pop();
-  
-  if (frameCount > 600) {
-    if      (pagina == 1){
-                window.open("https://editor.p5js.org/diazmaximo2a/full/VlcijYGm3", "_top");} //galeria
-    else if (pagina == 2){
-               window.open("https://editor.p5js.org/diazmaximo2a/full/INBSoXB8O", "_top");} //audio
-    else if (pagina == 3) {
-               window.open("https://editor.p5js.org/diazmaximo2a/full/sHf8YxOjK", "_top");}//ojos
-    }
-
 }
 
 function botonDerecho(event) {
