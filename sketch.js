@@ -135,7 +135,7 @@ function firstPerson(cam){
 }
 
 function setup() {
-  createCanvas(1000, 800, WEBGL);
+  createCanvas(984, 728, WEBGL);
   cam1 = createCamera();
   noCursor();
     
@@ -208,8 +208,8 @@ function draw() {
   plane(400);
   pop();
   }
-    // PARA LINKEAR ESTO VA DENTRO DEL BLOQUE DRAW SUSTITUYE EL MOUSECLICKED
-  if (frameCount > 250) {
+    // PARA LINKEAR 
+  if (frameCount > 150) {
     if      (pagina == 1){
                 window.open("https://jeffercart.github.io/galeria/", "_top");} //galeria
     else if (pagina == 2){
