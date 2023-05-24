@@ -209,7 +209,7 @@ function draw() {
   pop();
   }
     // PARA LINKEAR ESTO VA DENTRO DEL BLOQUE DRAW SUSTITUYE EL MOUSECLICKED
-  if (frameCount > 600) {
+  if (frameCount > 250) {
     if      (pagina == 1){
                 window.open("https://jeffercart.github.io/galeria/", "_top");} //galeria
     else if (pagina == 2){
