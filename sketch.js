@@ -8,6 +8,8 @@ let x3 = 5;
 let k1 = 260;
 
 function preload() {
+  soundFormats ('mp3');
+  fondo = loadSound("fondo.mp3");
   piso = loadImage("rizomitas.png");
   img = loadImage('IA.png'); 
   img1 = loadImage('img1.png');
@@ -20,7 +22,7 @@ function preload() {
   dispara2= loadImage('dispara2.png');
   dispara3= loadImage('dispara3.png');
   dispara4= loadImage('dispara4.png');
-  fondo = loadSound("fondo.mp3");
+  
 }
 
 function setup() {
